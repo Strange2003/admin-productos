@@ -7,7 +7,7 @@ describe("Serie2", () => {
       cy.get('.contenido > :nth-child(2)').should('be.visible')
     })
 
-    it("Agregar producto y que aparezca en la tabla", () => {
+    it.only("Agregar producto y que aparezca en la tabla", () => {
         cy.visit("http://localhost:3000/")
         cy.get('#usuario').type('admin')
         cy.get('#clave').type('1234')
